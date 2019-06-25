@@ -1,0 +1,63 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link rel="stylesheet" href="styles.css">
+
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cycling Survey Form</title>
+</head>
+<body>
+<main>
+  <header>
+  <h1 id="title">Cycling Survey Form</h1>
+  </header>
+  <div class="container">
+      <form id="survey-form">
+      <p> <label for="name" id="name-label">Name *<br /> <input type="text" placeholder="Enter your name" id="name" required /> </label> </p>
+      <p> <label for="email" id="email-label">Email * <br /> <input type="email" placeholder="Enter your email" id="email" required /> </label> </p>
+      <p> <label for="number" id="number-label">Age * <br /> <input type="number" min="1" max="100" placeholder="Enter your age" id="number" required /> </label> </p>
+      
+      <fieldset>
+      <legend>What Style of Cycling Do you Enjoy? </legend> 
+        <input type="radio" id="yes" name="recommend" value="yes" checked /> <label for="yes">MTB</label> <br />
+        <input type="radio" id="no" name="recommend" value="no" /> <label for="no">Road</label> <br />
+        <input type="radio" id="maybe" name="recommend" value="maybe" /> <label for="maybe">Hybrid </label>
+      </fieldset>
+      <br>
+      
+      <p>Why do you cycle?<br /> <select id="dropdown"> 
+        <option id="good" value="good">Fun</option>
+        <option id="average" value="average">Professional</option>
+        <option id="bad" value="bad">Health Benefits</option>
+        </select> </p><br>
+
+      
+      <fieldset>
+      <legend>When do you like to cycle?</legend>
+        <input type="checkbox" id="challenges" name="enjoy" value="challenges" /> <label for="challenges">Morning</label><br />
+        <input type="checkbox" id="projects" name="enjoy" value="projects" /> <label for="projects">Evening</label><br />
+        <input type="checkbox" id="community" name="enjoy" value="community" /> <label for="community">Weekdays</label><br>
+        <input type="checkbox" id="community" name="enjoy" value="community" /> <label for="community">Weekends</label>
+       </fieldset>
+       <br/>
+       <br/>
+       <br/>
+
+       <fieldset>
+          <legend>How often do you cycle?</legend>
+            <input type="checkbox" id="challenges" name="enjoy" value="challenges" /> <label for="challenges">Once a week</label><br />
+            <input type="checkbox" id="projects" name="enjoy" value="projects" /> <label for="projects">2-3 Times a Week</label><br />
+            <input type="checkbox" id="community" name="enjoy" value="community" /> <label for="community">3-5 Days a Week</label><br>
+            <input type="checkbox" id="community" name="enjoy" value="community" /> <label for="community">5-7 Days a Week</label>
+           </fieldset>
+           <br>
+      
+      <p>If you would like to tell us more please comment below<br /> <textarea placeholder="Enter your comments"> </textarea> </p>   
+      <p> <input type="submit" id="submit" value="Submit" class="button"> </p>
+    </form>
+  </div>
+  <div class="foot">
+  &copy Copyright James Hillman All Rights Reserved
+  </div>
+</main>
+</body>
